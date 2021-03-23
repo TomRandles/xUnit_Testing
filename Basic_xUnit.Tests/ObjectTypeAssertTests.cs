@@ -7,6 +7,7 @@ namespace Basic_xUnit.Tests
     public class ObjectTypeAssertTests
     {
         [Fact]
+        [Trait("Employee", "Object Type")]
         public void ManagerIsTypeTest()
         {
             var sut = new Manager();
@@ -15,6 +16,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Object Type")]
         public void LineWorkerIsTypeTest()
         {
             var sut = new LineWorker();
@@ -23,6 +25,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Object Type")]
         public void IsNotTypeTest()
         {
             var sut = new Manager();
@@ -31,6 +34,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Object Type")]
         public void IsAssignableFromTest()
         {
             Employee sut = new Manager();

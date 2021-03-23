@@ -1,6 +1,5 @@
 using Employees.Domain.Exceptions;
 using Employees.Domain.Factory;
-using Employees.Domain.Models;
 using System;
 using Xunit;
 
@@ -9,6 +8,7 @@ namespace Basic_xUnit.Tests
     public class ExceptionAssertTests
     {
         [Fact]
+        [Trait("Manager", "Exception")]
         public void CheckManagerCreationExceptionTest()
         {
             var dateOfBirth = DateTime.Now.AddYears(-40);

@@ -7,6 +7,7 @@ namespace Basic_xUnit.Tests
     public class NullAssertTests
     {
         [Fact]
+        [Trait("Employee", "Null")]
         public void FullNameNotSet()
         {
             var sut = new Manager();
@@ -15,10 +16,10 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Null")]
         public void FullNameSet()
         {
             var sut = new Manager();
-
 
             sut.FirstName = "Sarah";
             sut.LastName = "O'Sullivan";

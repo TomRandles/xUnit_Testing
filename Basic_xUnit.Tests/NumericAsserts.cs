@@ -7,6 +7,7 @@ namespace Basic_xUnit.Tests
     {
 
         [Fact]
+        [Trait("Employee", "Numeric")]
         public void CheckHourlyRate()
         {
             var sut = new LineWorker();
@@ -20,6 +21,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Numeric")]
         public void CheckWeeklyHours()
         {
             var sut = new LineWorker();
@@ -34,6 +36,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Numeric")]
         public void CheckWageCalculation()
         {
             var sut = new LineWorker();
@@ -49,6 +52,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Numeric")]
         public void CheckWageCalculationInRange()
         {
             var sut = new LineWorker();

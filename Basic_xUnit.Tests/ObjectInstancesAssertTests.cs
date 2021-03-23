@@ -6,6 +6,7 @@ namespace Basic_xUnit.Tests
     public class ObjectInstancesAssertTests
     {
         [Fact]
+        [Trait("Employee", "Object Instances")]
         public void ManagerIsNotSameTest()
         {
             var sut = new Manager();
@@ -15,6 +16,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "Object Instances")]
         public void ManagerIsSameTest()
         {
             var sut = new Manager();

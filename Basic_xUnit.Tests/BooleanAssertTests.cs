@@ -7,6 +7,7 @@ namespace Basic_xUnit.Tests
     public class BooleanAssertTests
     {
         [Fact]
+        [Trait("Manager", "Boolean")]
         public void IsManagerTest()
         {
             var empl = new Manager();
@@ -15,6 +16,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Manager", "Boolean")]
         public void IsNotManagerTest()
         {
             var empl = new LineWorker();

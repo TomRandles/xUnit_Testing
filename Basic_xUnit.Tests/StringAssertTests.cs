@@ -7,6 +7,7 @@ namespace Basic_xUnit.Tests
     public class StringAssertTests
     {
         [Fact]
+        [Trait("Employee", "String")]
         public void CalculateFullName()
         {
             var sut = new Manager();
@@ -18,6 +19,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "String")]
         public void HaveFullNameStartingWithFirstName()
         {
             var sut = new Manager();
@@ -29,6 +31,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "String")]
         public void HaveFullNameEndingWithLastName()
         {
             var sut = new LineWorker();
@@ -39,6 +42,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "String")]
         public void CalculateFullName_IgnoreCaseAssertExample()
         {
             var sut = new Manager();
@@ -50,6 +54,7 @@ namespace Basic_xUnit.Tests
         }
 
         [Fact]
+        [Trait("Employee", "String")]
         public void CalculateFullName_SubstringAssertExample()
         {
             var sut = new LineWorker();
@@ -62,6 +67,7 @@ namespace Basic_xUnit.Tests
 
 
         [Fact]
+        [Trait("Employee", "String")]
         public void CalculateFullNameWithTitleCase()
         {
             var sut = new LineWorker();
