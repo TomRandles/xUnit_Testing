@@ -1,3 +1,4 @@
+using Employees.Domain.Exceptions;
 using Employees.Domain.Factory;
 using Employees.Domain.Models;
 using System;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Employees.Domain.Factory
+namespace Employees.Domain.Exceptions
 {
     [Serializable]
     public class InvalidManagerException : Exception

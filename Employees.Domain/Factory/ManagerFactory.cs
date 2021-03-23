@@ -1,4 +1,5 @@
-﻿using Employees.Domain.Models;
+﻿using Employees.Domain.Exceptions;
+using Employees.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
